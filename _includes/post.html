@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include post_head.html %}
+    <body>
+        <div class="container h100 pt-5">
+            <div class="row h100">
+                {% include header.html %}
+                <main class="col-lg-8 h100">
+                    <div class="parallax" style='background-image: url("{{ header_img }}");'></div>
+                    <small>Header photo by {{ header_img_author }} via. <a href="{{ header_link }}" target="_blank">{{ header_source }}</a></small>
+                    <br>
+                    <h3 class="mt-3">{{ title }}</h3>
+                    <p>{{ date | date: "%b %d, %Y"  }}</p>
+
+                    {% if edit %}
+                        <p class="editors-note">{{ edit }}</p>                        
+                    {% endif %}
+                    <div class="content-wrapper">
+                        {{ content }}
+
+                        {% if bandcamp %}
+                            {{ bandcamp }}
+                        {% endif %}
+                    </div>
+                    <a href="/" class="mt-3">Return to Home</a>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

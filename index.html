@@ -1,0 +1,17 @@
+---
+layout: default.html
+title: Home
+---
+
+<!-- {% assign posts = site.posts %} -->
+    
+{% for post in collections.post reversed %}
+<div class="post-wrapper mb-3" >
+    <div class="parallax" style='background-image: url("{{ post.data.header_img }}");'></div>
+    <div class="h3">{{ post.data.title }}</div>
+    <p>{{ post.date | date: "%b %d, %Y" }}</p>
+    <p>{{ post.data.description }}</p>
+    <a href="{{ post.url }}">Read post.</a>
+</div>
+<hr>
+{% endfor %}
