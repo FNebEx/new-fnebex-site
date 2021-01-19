@@ -18,7 +18,7 @@ fields:
   config:
     required: false
   label: Permalink
-  default: '"/{{ title | slug}}/"'
+  default: "/{{ title | slug}}/"
 - name: tags
   type: select
   default: []
