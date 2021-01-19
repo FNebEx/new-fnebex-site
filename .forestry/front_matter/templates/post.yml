@@ -1,4 +1,65 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: post.html
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Permalink
+  default: '"/{{ title | slug}}/"'
+- name: tags
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - post
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Tags
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: YYYY-MM-DD
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  default: '2021-01-19'
+- name: header_img
+  type: text
+  config:
+    required: false
+  label: Header Image
+- name: header_link
+  type: text
+  config:
+    required: false
+  label: Header Link
+- name: header_source
+  type: text
+  config:
+    required: false
+  label: Header Source
+- name: header_img_author
+  type: text
+  config:
+    required: false
+  label: Header Image Author
