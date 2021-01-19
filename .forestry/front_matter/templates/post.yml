@@ -63,3 +63,5 @@ fields:
   config:
     required: false
   label: Header Image Author
+pages:
+- _posts/i-am-back.md
