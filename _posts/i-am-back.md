@@ -1,6 +1,6 @@
 ---
 layout: post.html
-permalink: '"/{{ title | slug}}/"'
+permalink: "/{{ title | slug}}/"
 tags: post
 date: 2021-01-19
 title: I am back
