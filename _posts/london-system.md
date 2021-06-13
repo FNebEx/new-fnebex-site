@@ -2,7 +2,7 @@
 layout: post.html
 permalink: "/{{ title | slug}}/"
 tags: post
-date: 2021-01-19
+date: 2021-06-13
 title: London System
 header_img: https://source.unsplash.com/bUM4weg0RSI
 header_link: https://unsplash.com/photos/bUM4weg0RSI
